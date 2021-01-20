@@ -80,18 +80,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="yiW-Ep-PHP"/>
                     <connections>
-                        <outlet property="categoryTable" destination="xn9-DW-dMA" id="xiJ-Sc-wWQ"/>
-                        <segue destination="wmX-I5-Z1b" kind="show" id="iEK-yZ-M1G"/>
+                        <outlet property="categoryTable" destination="xn9-DW-dMA" id="TxJ-KN-hcf"/>
+                        <segue destination="wmX-I5-Z1b" kind="show" identifier="ProductsVC" id="iEK-yZ-M1G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="129.98500749625188"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="h6r-7w-TZb">
             <objects>
-                <viewController id="wmX-I5-Z1b" sceneMemberID="viewController">
+                <viewController id="wmX-I5-Z1b" customClass="ProductsVC" customModule="coder_swag_online_shop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xjK-BC-faL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QBg-5g-Xa9" customClass="ProductCell" customModule="coder_swag_online_shop" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="QBg-5g-Xa9" customClass="ProductCell" customModule="coder_swag_online_shop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="253"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wc6-oJ-F5L">
@@ -181,6 +181,9 @@
                         <viewLayoutGuide key="safeArea" id="agh-U8-DBZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ywa-lr-MeS"/>
+                    <connections>
+                        <outlet property="productsCollection" destination="ahV-3z-MT8" id="04H-HZ-3lb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5F-mz-QqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
